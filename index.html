@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salon Cantika</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="contain">
+        <h1>Salon Cantika</h1>
+        <h2>selamat datang</h2>
+        
+        <!-- data pelanggan -->
+        <div class="data-pelanggan">
+            <h3>Data Pelanggan</h3>
+            <label for="">Nama Pelanggan</label>
+            <input type="text" placeholder="Nama Pelanggan" id="nama">
+            <label for="">No.Telp Pelanggan</label>
+            <input type="text" placeholder="No.Telp" id="telp">
+            <br>
+            <button type="button" id="next">Next</button>
+        </div>
+        <br>
+
+        <!-- lanjut transaksi -->
+        <div class="transaksi">
+            <p>lakukan transaksi?</p>
+            <button type="button" id="iya">Iya</button>
+            <button type="button" id="tidak">Tidak</button>
+        </div>
+
+        <!-- pilihan menu -->
+        <div class="menu">
+            <p>Menu pilihan yang tersedia :</p>
+            <ol type="1">
+                <li>perawatan</li>
+                <li>penyewaan</li>
+            </ol>
+            <br>
+            <p>pilihan menu : [1/2]</p>
+            <input type="text" id="input-pilihan" placeholder="Pilihan Menu">
+            <button type="button" id="btn-menu">Next</button>
+        </div>
+
+        <!-- menu perawatan -->
+        <div class="perawatan">
+            <p>Menu perawatan</p>
+            <ol type="1">
+                <li>facial wajah</li>
+                <li>masker</li>
+                <li>potong rambut</li>
+            </ol>
+            <br>
+            <p>pilihan anda : [1/2/3]</p>
+            <input type="text" id="input-perawatan" placeholder="Pilihan Menu">
+            <button type="button" id="btn-perawatan">Next</button>
+        </div>
+
+                <!-- facial wajah -->
+                <div class="facial">
+                    <p>Menu facial wajah</p>
+                    <ol type="1">
+                        <li>facial biasa 50.000</li>
+                        <li>facial emas 100.000</li>
+                    </ol>
+                    <br>
+                    <p>pilihan anda : [1/2]</p>
+                    <input type="text" id="input-facial" placeholder="Pilihan Menu">
+                    <button type="button" id="btn-facial">Next</button>
+                </div>
+
+                <!-- masker -->
+                <div class="masker">
+                    <p>Menu masker</p>
+                    <ol type="1">
+                        <li>masker buah 40.000</li>
+                        <li>masker lumpur 75.000</li>
+                    </ol>
+                    <br>
+                    <p>pilihan anda : [1/2]</p>
+                    <input type="text" id="input-masker" placeholder="Pilihan Menu">
+                    <button type="button" id="btn-masker">Next</button>
+                </div>
+
+                <!-- potong rambut -->
+                <div class="potong-rambut">
+                    <p>Menu potong rambut</p>
+                    <ol type="1">
+                        <li>tidak keramas 20.000</li>
+                        <li>keramas 35.000</li>
+                    </ol>
+                    <br>
+                    <p>pilihan anda : [1/2]</p>
+                    <input type="text" id="input-potongrambut" placeholder="Pilihan Menu">
+                    <button type="button" id="btn-potongrambut">Next</button>
+                </div>
+        
+        <!-- menu penyewaan -->
+        <div class="penyewaan">
+            <p>Menu penyewaan</p>
+            <ol type="1">
+                <li>rias wajah</li>
+                <li>baju pengantin</li>
+                <li>aksesoris</li>
+            </ol>
+            <br>
+            <p>pilihan anda : [1/2/3]</p>
+            <input type="text" id="input-penyewaan" placeholder="Pilihan Menu">
+            <button type="button" id="btn-penyewaan">Next</button>
+        </div>
+
+                <!-- rias wajah -->
+                <div class="rias">
+                    <p>Menu rias wajah</p>
+                    <ol type="1">
+                        <li>rias wajah biasa 100.000</li>
+                        <li>rias wajah makeup artis 250.000</li>
+                    </ol>
+                    <br>
+                    <p>pilihan anda : [1/2]</p>
+                    <input type="text" id="input-rias" placeholder="Pilihan Menu">
+                    <button type="button" id="btn-rias">Next</button>
+                </div>
+
+                <!-- baju pengantin -->
+                <div class="pengantin">
+                    <p>Menu baju pengantin</p>
+                    <ol type="1">
+                        <li>baju pengantin adat 150.000</li>
+                        <li>baju pengantin intern 350.000</li>
+                    </ol>
+                    <br>
+                    <p>pilihan anda : [1/2]</p>
+                    <input type="text" id="input-pengantin" placeholder="Pilihan Menu">
+                    <button type="button" id="btn-pengantin">Next</button>
+                </div>
+
+                <!-- aksesoris -->
+                <div class="aksesoris">
+                    <p>Menu aksesoris</p>
+                    <ol type="1">
+                        <li>aksesoris anak 20.000</li>
+                        <li>aksesoris dewasa 50.000</li>
+                    </ol>
+                    <br>
+                    <p>pilihan anda : [1/2]</p>
+                    <input type="text" id="input-aksesoris" placeholder="Pilihan Menu">
+                    <button type="button" id="btn-aksesoris">Next</button>
+                </div>
+
+        <!-- jumlah orang -->
+        <div class="berapa-org">
+            <p>Berapa orang?</p>
+            <input type="text" id="input-jmlorg" placeholder="Jumlah Orang">
+            <button type="button" id="btn-jmlorg">OK</button>
+        </div>
+
+        <!-- hasil -->
+        <div class="hasil">
+            <div class="jumlah"></div>
+            <br>
+            <p>Input kembali ?</p>
+            <a href="index.html"><button type="button">iya</button></a>
+            <button type="button" id="mulai-kembali">tidak</button>
+        </div>
+
+        <!-- end -->
+        <div class="end"></div>
+                
+
+    <script src="script.js"></script>
+</body>
+</html>

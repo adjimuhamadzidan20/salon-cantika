@@ -1,0 +1,645 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: play;
+    src: url(font/Play-Regular.ttf);
+}
+
+body {
+    background-image: url(bg/curls.png);
+}
+
+.contain {
+    width: 550px;
+    background-color: rgba(0, 0, 0, 0.4);
+    margin: 80px auto;
+    padding: 28px 30px;
+    font-family: play;
+    font-weight: lighter;
+    border: 1px solid #333333;
+}
+
+.contain h1 {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #CC8E36;
+}
+
+.contain h2 {
+    margin-top: 5px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #CC8E36;
+    letter-spacing: 1px;
+    font-family: play;
+    font-weight: lighter;
+    font-size: 21px;
+}
+
+.contain h3 {
+    color: #CC8E36;
+    margin-bottom: 25px;
+    text-align: center;
+    font-family: play;
+    font-weight: lighter;
+}
+
+/*data pelanggan*/
+.contain .data-pelanggan {
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    margin: auto;
+    margin-top: 30px;
+    width: 410px;
+    border: 1px solid #CC8E36;
+}
+
+.contain .data-pelanggan label {
+    margin-bottom: 5px;
+    color: #CC8E36;
+}
+
+.contain .data-pelanggan #nama {
+    margin-bottom: 15px;
+    border: none;
+    padding: 4px;
+    outline-color: #CC8E36;
+    font-family: play;
+
+}
+
+.contain .data-pelanggan #telp {
+    border: none;
+    padding: 4px;
+    outline-color: #CC8E36;
+    font-family: play;
+}
+
+.contain .data-pelanggan #nama::placeholder {
+    font-size: 12px;
+}
+
+.contain .data-pelanggan #telp::placeholder {
+    font-size: 12px;
+}
+
+.contain .data-pelanggan button {
+    width: 85px;
+    margin: auto;
+    padding: 3px 0;
+    border: none;
+    background-color: #CC8E36;
+    color: white;
+    font-family: play;
+}
+
+.contain .data-pelanggan button:hover {
+    cursor: pointer;
+    background-color: #875F26;
+}
+
+/*transaksi*/
+.transaksi, .menu, .perawatan, .facial, 
+.masker, .potong-rambut, .penyewaan, .rias, 
+.pengantin, .aksesoris {
+    padding: 25px;
+    margin: auto;
+    margin-top: 30px;
+    width: 410px;
+    border: 1px solid #CC8E36;
+    display: none;
+}
+
+.transaksi p {
+    text-transform: capitalize;
+    color: #CC8E36;
+    margin-bottom: 12px;
+}
+
+.transaksi button {
+    width: 70px;
+    padding: 3px 0;
+    border: none;
+    background-color: #CC8E36;
+    color: white;
+    font-family: play;
+}
+
+.transaksi button:hover {
+    cursor: pointer;
+    background-color: #875F26;
+}
+
+/*pilihan menu*/
+.menu p {
+    text-transform: capitalize;
+    color: #CC8E36;
+    margin-bottom: 10px;
+}
+
+.menu ol {
+    padding: 0 15px;
+    text-transform: capitalize;
+    color: #CC8E36;
+}
+
+.menu #input-pilihan {
+    border: none;
+    padding: 4px;
+    outline-color: #CC8E36;
+    margin-right: 5px;
+    font-family: play;
+}
+
+.menu #input-pilihan::placeholder {
+    font-size: 12px;
+}
+
+.menu button {
+    width: 70px;
+    padding: 3px 0;
+    border: none;
+    background-color: #CC8E36;
+    color: white;
+    font-family: play;
+}
+
+.menu button:hover {
+    cursor: pointer;
+    background-color: #875F26;
+}
+
+/*menu perawatan*/
+.perawatan p {
+    text-transform: capitalize;
+    color: #CC8E36;
+    margin-bottom: 10px;
+}
+
+.perawatan ol {
+    padding: 0 15px;
+    text-transform: capitalize;
+    color: #CC8E36;
+}
+
+.perawatan #input-perawatan {
+    border: none;
+    padding: 4px;
+    outline-color: #CC8E36;
+    margin-right: 5px;
+    font-family: play;
+}
+
+.perawatan #input-perawatan::placeholder {
+    font-size: 12px;
+}
+
+.perawatan button {
+    width: 70px;
+    padding: 3px 0;
+    border: none;
+    background-color: #CC8E36;
+    color: white;
+    font-family: play;
+}
+
+.perawatan button:hover {
+    cursor: pointer;
+    background-color: #875F26;
+}
+
+/*facial wajah*/
+.facial p {
+    text-transform: capitalize;
+    color: #CC8E36;
+    margin-bottom: 10px;
+}
+
+.facial ol {
+    padding: 0 15px;
+    text-transform: capitalize;
+    color: #CC8E36;
+}
+
+.facial #input-facial {
+    border: none;
+    padding: 4px;
+    outline-color: #CC8E36;
+    margin-right: 5px;
+    font-family: play;
+}
+
+.facial #input-facial::placeholder {
+    font-size: 12px;
+}
+
+.facial button {
+    width: 70px;
+    padding: 3px 0;
+    border: none;
+    background-color: #CC8E36;
+    color: white;
+    font-family: play;
+}
+
+.facial button:hover {
+    cursor: pointer;
+    background-color: #875F26;
+}
+
+/*masker*/
+.masker p {
+    text-transform: capitalize;
+    color: #CC8E36;
+    margin-bottom: 10px;
+}
+
+.masker ol {
+    padding: 0 15px;
+    text-transform: capitalize;
+    color: #CC8E36;
+}
+
+.masker #input-masker {
+    border: none;
+    padding: 4px;
+    outline-color: #CC8E36;
+    margin-right: 5px;
+    font-family: play;
+}
+
+.masker #input-masker::placeholder {
+    font-size: 12px;
+}
+
+.masker button {
+    width: 70px;
+    padding: 3px 0;
+    border: none;
+    background-color: #CC8E36;
+    color: white;
+    font-family: play;
+}
+
+.masker button:hover {
+    cursor: pointer;
+    background-color: #875F26;
+}
+
+/*potong rambut*/
+.potong-rambut p {
+    text-transform: capitalize;
+    color: #CC8E36;
+    margin-bottom: 10px;
+}
+
+.potong-rambut ol {
+    padding: 0 15px;
+    text-transform: capitalize;
+    color: #CC8E36;
+}
+
+.potong-rambut #input-potongrambut {
+    border: none;
+    padding: 4px;
+    outline-color: #CC8E36;
+    margin-right: 5px;
+    font-family: play;
+}
+
+.potong-rambut #input-potongrambut::placeholder {
+    font-size: 12px;
+}
+
+.potong-rambut button {
+    width: 70px;
+    padding: 3px 0;
+    border: none;
+    background-color: #CC8E36;
+    color: white;
+    font-family: play;
+}
+
+.potong-rambut button:hover {
+    cursor: pointer;
+    background-color: #875F26;
+}
+
+/*penyewaan*/
+.penyewaan p {
+    text-transform: capitalize;
+    color: #CC8E36;
+    margin-bottom: 10px;
+}
+
+.penyewaan ol {
+    padding: 0 15px;
+    text-transform: capitalize;
+    color: #CC8E36;
+}
+
+.penyewaan #input-penyewaan {
+    border: none;
+    padding: 4px;
+    outline-color: #CC8E36;
+    margin-right: 5px;
+    font-family: play;
+}
+
+.penyewaan #input-penyewaan::placeholder {
+    font-size: 12px;
+}
+
+.penyewaan button {
+    width: 70px;
+    padding: 3px 0;
+    border: none;
+    background-color: #CC8E36;
+    color: white;
+    font-family: play;
+}
+
+.penyewaan button:hover {
+    cursor: pointer;
+    background-color: #875F26;
+}
+
+/*rias wajah*/
+.rias p {
+    text-transform: capitalize;
+    color: #CC8E36;
+    margin-bottom: 10px;
+}
+
+.rias ol {
+    padding: 0 15px;
+    text-transform: capitalize;
+    color: #CC8E36;
+}
+
+.rias #input-rias {
+    border: none;
+    padding: 4px;
+    outline-color: #CC8E36;
+    margin-right: 5px;
+    font-family: play;
+}
+
+.rias #input-rias::placeholder {
+    font-size: 12px;
+}
+
+.rias button {
+    width: 70px;
+    padding: 3px 0;
+    border: none;
+    background-color: #CC8E36;
+    color: white;
+    font-family: play;
+}
+
+.rias button:hover {
+    cursor: pointer;
+    background-color: #875F26;
+}
+
+/*baju pengantin*/
+.pengantin p {
+    text-transform: capitalize;
+    color: #CC8E36;
+    margin-bottom: 10px;
+}
+
+.pengantin ol {
+    padding: 0 15px;
+    text-transform: capitalize;
+    color: #CC8E36;
+}
+
+.pengantin #input-pengantin {
+    border: none;
+    padding: 4px;
+    outline-color: #CC8E36;
+    margin-right: 5px;
+    font-family: play;
+}
+
+.pengantin #input-pengantin::placeholder {
+    font-size: 12px;
+}
+
+.pengantin button {
+    width: 70px;
+    padding: 3px 0;
+    border: none;
+    background-color: #CC8E36;
+    color: white;
+    font-family: play;
+}
+
+.pengantin button:hover {
+    cursor: pointer;
+    background-color: #875F26;
+}
+
+/*aksesoris*/
+.aksesoris p {
+    text-transform: capitalize;
+    color: #CC8E36;
+    margin-bottom: 10px;
+}
+
+.aksesoris ol {
+    padding: 0 15px;
+    text-transform: capitalize;
+    color: #CC8E36;
+}
+
+.aksesoris #input-aksesoris {
+    border: none;
+    padding: 4px;
+    outline-color: #CC8E36;
+    margin-right: 5px;
+    font-family: play;
+}
+
+.aksesoris #input-aksesoris::placeholder {
+    font-size: 12px;
+}
+
+.aksesoris button {
+    width: 70px;
+    padding: 3px 0;
+    border: none;
+    background-color: #CC8E36;
+    color: white;
+    font-family: play;
+}
+
+.aksesoris button:hover {
+    cursor: pointer;
+    background-color: #875F26;
+}
+
+/*jumlah orang*/
+.berapa-org {
+    padding: 25px;
+    margin: auto;
+    margin-top: 30px;
+    width: 410px;
+    border: 1px solid #CC8E36;
+    display: none;
+}
+
+.berapa-org p {
+    text-transform: capitalize;
+    color: #CC8E36;
+    margin-bottom: 10px;
+}
+
+.berapa-org #input-jmlorg {
+    border: none;
+    padding: 4px;
+    outline-color: #CC8E36;
+    margin-right: 5px;
+    font-family: play;
+}
+
+.berapa-org #input-jmlorg::placeholder {
+    font-size: 12px;
+}
+
+.berapa-org button {
+    width: 70px;
+    padding: 3px 0;
+    border: none;
+    background-color: #CC8E36;
+    color: white;
+    font-family: play;
+}
+
+.berapa-org button:hover {
+    cursor: pointer;
+    background-color: #875F26;
+}
+
+/*hasil*/
+.hasil {
+    display: none;
+    padding: 25px;
+    margin: auto;
+    margin-top: 30px;
+    width: 410px;
+    border: 1px solid #CC8E36;
+
+}
+
+.hasil p {
+    text-transform: capitalize;
+    color: #CC8E36;
+    margin-bottom: 10px;
+}
+
+.hasil button {
+    width: 70px;
+    padding: 3px 0;
+    border: none;
+    background-color: #CC8E36;
+    color: white;
+    font-family: play;
+}
+
+.hasil button:hover {
+    cursor: pointer;
+    background-color: #875F26;
+}
+
+/*end*/
+.end {
+    display: none;
+    padding: 25px;
+    margin: auto;
+    margin-top: 30px;
+    width: 410px;
+    border: 1px solid #CC8E36;
+}
+
+/*web responsive*/
+@media screen and (max-width: 500px) {
+    .contain {
+        width: 350px;
+    }
+
+    .contain .data-pelanggan, .transaksi, .menu, .perawatan, .facial, 
+    .masker, .potong-rambut, .penyewaan, .rias, 
+    .pengantin, .aksesoris, .berapa-org, .hasil, .end {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .contain h1 {
+        font-size: 30px;
+    }
+
+    .contain h2 {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .contain {
+        width: 325px;
+    }
+
+    .menu button {
+        margin-top: 12px;
+    }
+
+    .perawatan button {
+        margin-top: 12px;
+    }
+
+    .facial button {
+        margin-top: 12px;
+    }
+
+    .masker button {
+        margin-top: 12px;
+    }
+
+    .potong-rambut button {
+        margin-top: 12px;
+    }
+
+    .penyewaan button {
+        margin-top: 12px;
+    }
+
+    .rias button {
+        margin-top: 12px;
+    }
+
+    .pengantin button {
+        margin-top: 12px;
+    }
+
+    .aksesoris button {
+        margin-top: 12px;
+    }
+
+    .berapa-org button {
+        margin-top: 12px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .contain {
+        width: 280px;
+    }
+}
